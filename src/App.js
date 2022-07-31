@@ -140,9 +140,9 @@ function App() {
                   onClose={() => setCurrentPlaceId(null)}
                 >
                   <div className="card">
-                    <label>place</label>
+                    <label>Place Name</label>
                     <h4 className="place">{p.title}</h4>
-                    <label>review</label>
+                    <label>Review</label>
                     <p className="desc">{p.desc}</p>
                     <label>rating</label>
                     <div className="stars">
@@ -170,13 +170,13 @@ function App() {
             onClose={() => setCurrentPlaceId(null)}
           >
             <form onSubmit={handleSubmit}>
-              <label>Title</label>
+              <label>Place Name</label>
               <input
                 placeholder="Enter a place name"
                 autoFocus
                 onChange={(e) => setTitle(e.target.value)}
               />
-              <label>Description</label>
+              <label>Review </label>
               <textarea
                 placeholder="mention your experiance in that palce."
                 onChange={(e) => setDesc(e.target.value)}
