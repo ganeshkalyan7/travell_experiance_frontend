@@ -112,22 +112,22 @@ function App() {
                 offsetLeft={-3.5 * viewport.zoom}
                 offsetTop={-7 * viewport.zoom}
                 // color="#b40219"
-                // color={p.username === currentUser ? "#b40219" : "black"}
-                // fontSize={viewport.zomm * 10}
+                color={p.username === currentUser ? "#b40219" : "black"}
+                fontSize={viewport.zomm * 10}
                 // style={{
                 //   fontSize: 7 * viewport.zoom,
                 //   color: currentUser === p.username ? "tomato" : "slateblue",
                 //   cursor: "pointer",
                 // }}
-                // onClick={() => handleMarkerClick(p._id, p.lat, p.long)}
+                onClick={() => handleMarkerClick(p._id, p.lat, p.long)}
               >
-                <RoomIcon
+                {/* <RoomIcon
                   style={{
                     fontSize: viewport.zomm * 10,
                     color: p.username === currentUser ? "tomato" : "black",
                   }}
                   onClick={() => handleMarkerClick(p._id, p.lat, p.long)}
-                />
+                /> */}
               </Marker>
               {p._id === currentPlaceId && (
                 <Popup
